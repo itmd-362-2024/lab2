@@ -1,0 +1,11 @@
+html { 
+    height: 100% 
+}
+
+body {
+    background: center / cover no-repeat fixed url("../media/building.jpg");
+}
+
+.form {
+    background-color:;
+}
