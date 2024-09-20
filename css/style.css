@@ -30,7 +30,7 @@ body {
   position: fixed;
   top: 10%;
   width: 100%;
-  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 #form {
