@@ -1,11 +1,36 @@
-html { 
-    height: 100% 
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    background: center / cover no-repeat fixed url("../media/building.jpg");
+  background: center / cover no-repeat fixed url("../media/building.jpg");
+  font-family: "Roboto", "Montserrat", sans-serif;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 .form {
-    background-color:;
+  width: 90%;
+  height: 100%;
+  margin: 1em auto;
+  backdrop-filter: blur(4px) brightness(30%);
+  color: #eee;
+  text-align: center;
+  justify-content: center;
+  line-height: 2em;
+  font-size: 1.5em;
+}
+
+.form strong {
+  font-weight: bold;
+  font-style: normal;
+  color:greenyellow;
+}
+
+.form label::after {
+  color: red;
+  content: ' *';
+  display: inline;
 }
