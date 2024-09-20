@@ -6,6 +6,7 @@ body {
   font-family: "Roboto", "Montserrat", sans-serif;
   padding: 0.5em;
   height: 100svh;
+  min-height: 600px;
   box-sizing: border-box;
   display: flex;
   flex-flow: column;
@@ -20,23 +21,23 @@ body {
   font-size: 2em;
 }
 
-#centerer {
+#main-container {
   align-content: center;
   flex: 1 1 auto;
 }
 
-#blurb {
+#form-header {
   position: fixed;
-  top: 2em;
+  top: 10%;
   width: 100%;
-  word-break: break-all;
+  word-break: break-word;
 }
 
-.form {
+#form {
   width: 90%;
-  height:85%;
+  height: 75%;
   margin: 0 auto;
-  backdrop-filter: blur(4px) brightness(30%);
+  backdrop-filter: blur(3px) brightness(30%);
   border-radius: 0.4em;
   color: #eee;
   text-align: center;
@@ -45,13 +46,13 @@ body {
   font-size: 1.5em;
 }
 
-.form strong {
+#form strong {
   font-weight: bold;
   font-style: normal;
   color:greenyellow;
 }
 
-.form label::before {
+#form label::before {
   color: red;
   content: '* ';
   display: inline;
@@ -61,7 +62,7 @@ button {
   background-color: greenyellow;
   font-size: 1.5rem;
   padding: 0.3em;
-  border-radius: 2em;
+  border-radius: 1.8em;
 }
 
 button:hover {

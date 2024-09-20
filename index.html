@@ -11,22 +11,22 @@
     <div id="logo">
         <h3>"Legitimate" Insurance Co.</h3>
     </div>
-    <div id="centerer">
-        <form class="form">
-            <div id="blurb">
+    <div id="main-container">
+        <form id="form" autocomplete="on" action="/" method="POST">
+            <div id="form-header">
                 <h1>Fill in your information to see how much you can <strong>SAVE</strong> today!</h1>
             </div>
             <div>
                 <label for="input-email">Email Address</label>
-                <input type="email" id="input-email" autocomplete="email">
+                <input type="email" autocomplete="email" required>
             </div>
             <div>
                 <label for="input-tel">Phone number</label>
-                <input type="tel" id="input-tel" autocomplete="tel" pattern="([0-9]{10})">
+                <input type="tel" autocomplete="tel" pattern="([0-9]{10})" required>
             </div>
             <div>
                 <label for="input-date">Date of Birth</label>
-                <input type="date" id="input-date" autocomplete="bday">
+                <input type="date" autocomplete="bday" required>
             </div>
             <button type="submit" id="submit">Get your quote!</button>
         </form>
